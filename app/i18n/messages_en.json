@@ -1,0 +1,41 @@
+{
+	"welcome" : "Welcome",
+	
+	"english" : "English",
+    "french" : "Fran\u00e7ais",
+	
+	"create" : "Create",
+	"edit" : "Edit",
+	"delete" : "Delete",
+	"delete ok" : "Delete ok",
+	"save" : "Save",
+	"save ok" : "Save ok",
+	"cancel" : "Cancel",
+
+	"Cliente" : "Cliente",
+	"cliente.id" : "id",
+	"cliente.nome" : "nome",
+	"cliente.telefone" : "telefone",
+	"cliente.id.not.defined" : "Cliente identifier is not defined",
+
+	"Servico" : "Servico",
+	"servico.id" : "id",
+	"servico.dataEntrada" : "dataEntrada",
+	"servico.dataSaida" : "dataSaida",
+	"servico.valor" : "valor",
+	"servico.observacao" : "observacao",
+	"servico.clienteId" : "clienteId",
+	"servico.id.not.defined" : "Servico identifier is not defined",
+
+	"ServicoRoupas" : "ServicoRoupas",
+	"servicoRoupas.id" : "id",
+	"servicoRoupas.tipoServico" : "tipoServico",
+	"servicoRoupas.quantidadePecas" : "quantidadePecas",
+	"servicoRoupas.id.not.defined" : "ServicoRoupas identifier is not defined",
+	
+	"server.not.responding": "The server is not responding",
+	"url.invalid": "Invalid URL : {value}",
+	"url.bad": "Bad URL : {value}",
+
+	"app.version" : "Version"
+}

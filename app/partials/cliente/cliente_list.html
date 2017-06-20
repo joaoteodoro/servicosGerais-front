@@ -1,0 +1,24 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'Cliente' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'cliente.id' | translate }}</th>
+						<th>{{ 'cliente.nome' | translate }}</th>
+						<th>{{ 'cliente.telefone' | translate }}</th>
+						<th><a class="btn btn-info" href='#/cliente/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="cliente in clientes">
+						<td>{{cliente.id}}</td>
+						<td>{{cliente.nome}}</td>
+						<td>{{cliente.telefone}}</td>
+						<td><a class="btn btn-info" href="#/cliente/{{cliente.id}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

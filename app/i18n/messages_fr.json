@@ -1,0 +1,41 @@
+{
+	"welcome" : "Accueil",
+
+	"english" : "English",
+    "french" : "Fran\u00e7ais",	
+	
+	"create" : "Cr\u00e9er",
+	"edit" : "Modifier",
+	"delete" : "Supprimer",
+	"delete ok" : "Suppression r\u00e9ussie",
+	"save" : "Enregistrer",
+	"save ok" : "Enregistrement r\u00e9ussi",
+	"cancel" : "Annuler",
+
+	"Cliente" : "Cliente",
+	"cliente.id" : "id",
+	"cliente.nome" : "nome",
+	"cliente.telefone" : "telefone",
+	"cliente.id.not.defined" : "L'identfiant de Cliente n'est pas d\u00E9fini",
+
+	"Servico" : "Servico",
+	"servico.id" : "id",
+	"servico.dataEntrada" : "dataEntrada",
+	"servico.dataSaida" : "dataSaida",
+	"servico.valor" : "valor",
+	"servico.observacao" : "observacao",
+	"servico.clienteId" : "clienteId",
+	"servico.id.not.defined" : "L'identfiant de Servico n'est pas d\u00E9fini",
+
+	"ServicoRoupas" : "ServicoRoupas",
+	"servicoRoupas.id" : "id",
+	"servicoRoupas.tipoServico" : "tipoServico",
+	"servicoRoupas.quantidadePecas" : "quantidadePecas",
+	"servicoRoupas.id.not.defined" : "L'identfiant de ServicoRoupas n'est pas d\u00E9fini",
+
+	"server.not.responding": "Le serveur ne r\u00e9pond pas",
+	"url.invalid": "URL invalide : {value}",
+	"url.bad": "URL incorrecte : {value}",
+
+	"app.version" : "Version"
+}

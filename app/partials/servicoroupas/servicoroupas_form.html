@@ -1,0 +1,43 @@
+	<fieldset class="col-sm-12 bordure">
+		<legend class="legende">{{ 'ServicoRoupas' | translate }}</legend>
+		
+		<div ng-include src="'partials/message-include.html'"></div>
+   		
+		<form class="well form-horizontal">
+			<div class="form-group">
+				<label for="servicoRoupas_id" class="col-sm-2 control-label">{{ 'servicoRoupas.id' | translate }}</label>
+				<div class="col-sm-10">
+                    <select id="servicoRoupas_id" ng-model="servicoRoupas.id" name="id" class="form-control" ng-disabled="mode != 'create'">
+						<option value=""></option>
+                        <option ng-repeat="servico in items.servicos" title="{{servico.label}}" ng-selected="{{servico.value == servicoRoupas.id}}" value="{{servico.value}}">{{servico.label}}</option>
+                    </select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="servicoRoupas_tipoServico" class="col-sm-2 control-label">{{ 'servicoRoupas.tipoServico' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="servicoRoupas_tipoServico" name="tipoServico" ng-model="servicoRoupas.tipoServico" class="form-control" maxLength="15" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="servicoRoupas_quantidadePecas" class="col-sm-2 control-label">{{ 'servicoRoupas.quantidadePecas' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="servicoRoupas_quantidadePecas" name="quantidadePecas" ng-model="servicoRoupas.quantidadePecas" class="form-control" maxLength="11" />
+				</div>
+			</div>
+
+			<!-- ACTION BUTTONS -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-2">
+					<a role="button" class="btn btn-danger btn-block" ng-click="delete(servicoRoupas.id)" ng-show="mode != 'create'">{{ 'delete' | translate }}</a>
+				</div>
+    			<div class="col-sm-offset-4 col-sm-2">
+					<a role="button" class="btn btn-default btn-block" href="#/servicoRoupas">{{ 'cancel' | translate }}</a>
+				</div>
+    			<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="save()">{{ 'save' | translate }}</button>
+				</div>
+			</div>
+		</form>
+			
+    </fieldset>
