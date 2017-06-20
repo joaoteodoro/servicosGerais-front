@@ -16,6 +16,8 @@ servicoModule.controller('ServicoCtrl', ['Servico',  'Cliente', '$scope', '$rout
 	$scope.items = {};
     // clientes
 	$scope.items.clientes = [];
+	
+	$scope.items.tiposServicos = [];
 
     /**
      * Load all referencies entities
@@ -25,6 +27,12 @@ servicoModule.controller('ServicoCtrl', ['Servico',  'Cliente', '$scope', '$rout
 				function(success) {
         	        $scope.items.clientes = success.data;
             	}, 
+	            MessageHandler.manageError);
+		
+		Servico.getAllTiposServicos().then(
+				function(sucess){
+					$scope.items.tiposServicos = sucess.data;
+				}, 
 	            MessageHandler.manageError);
     };
     

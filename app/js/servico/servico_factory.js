@@ -24,7 +24,11 @@ servicoModule.factory('Servico', ['$http', 'restURL', function($http, restURL) {
     };
 	
 	return {
-        /**
+		getAllTiposServicos: function(){
+			return $http.get(restURL + '/tipoServico');
+		},
+		
+		/**
          * Get all servicos as list items
          * @return all servicos as list items
          */

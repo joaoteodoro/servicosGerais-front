@@ -7,7 +7,6 @@
 				<thead>
 					<tr>
 						<th>{{ 'servicoRoupas.id' | translate }}</th>
-						<th>{{ 'servicoRoupas.tipoServico' | translate }}</th>
 						<th>{{ 'servicoRoupas.quantidadePecas' | translate }}</th>
 						<th><a class="btn btn-info" href='#/servicoRoupas/new'>{{ 'create' | translate }}</a></th>
 					</tr>
@@ -15,7 +14,6 @@
 				<tbody>
 					<tr ng-repeat="servicoRoupas in servicoRoupass">
 						<td>{{servicoRoupas.id}}</td>
-						<td>{{servicoRoupas.tipoServico}}</td>
 						<td>{{servicoRoupas.quantidadePecas | number }}</td>
 						<td><a class="btn btn-info" href="#/servicoRoupas/{{servicoRoupas.id}}">{{ 'edit' | translate }}</a></td>
 					</tr>

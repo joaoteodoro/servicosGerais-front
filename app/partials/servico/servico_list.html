@@ -7,6 +7,7 @@
 				<thead>
 					<tr>
 						<th>{{ 'servico.id' | translate }}</th>
+						<th>{{ 'servicoRoupas.tipoServico' | translate }}</th>
 						<th>{{ 'servico.dataEntrada' | translate }}</th>
 						<th>{{ 'servico.dataSaida' | translate }}</th>
 						<th>{{ 'servico.valor' | translate }}</th>
@@ -17,6 +18,7 @@
 				<tbody>
 					<tr ng-repeat="servico in servicos">
 						<td>{{servico.id}}</td>
+						<td>{{servicoRoupas.tipoServico}}</td>
 						<td>{{servico.dataEntrada | date:'shortDate'}}</td>
 						<td>{{servico.dataSaida | date:'shortDate'}}</td>
 						<td>{{servico.valor}}</td>
